@@ -33,6 +33,7 @@ In menuconfig choose static build option in build options.
     mkdir -pv $WORKDIR/initramfs/arm-busybox  
     cd $WORKDIR/initramfs/arm-busybox  
     mkdir -pv {bin,sbin,etc/{init.d},proc,sys,usr/{bin,sbin}}  
+    cp -av $WORKDIR/obj/busybox-arm/_install/* .  
 
 ## 7. Write a rcS file inside init.d which will be executed after bootup:
 

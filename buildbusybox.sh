@@ -16,7 +16,7 @@ cd etc/init.d/
 echo -n "#!" >> rcS
 echo -e "/bin/sh\nmount -t proc none /proc\nmount -t sysfs none /sys\n/sbin/mdev -s" >> rcS
 chmod +x rcS
-cd $WORKDIR/obj/busybox-arm
+cd $WORKDIR/initramfs/arm-busybox
 find . | cpio -o --format=newc > $WORKDIR/obj/rootfs.img
 cd $WORKDIR/obj/
 gzip -c rootfs.img > rootfs.img.gz

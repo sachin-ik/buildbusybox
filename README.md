@@ -44,7 +44,7 @@ In menuconfig choose static build option in build options.
 
 ## 8. Create rootfs file  
 
-    cd $WORKDIR/obj/busybox-arm
+    cd $WORKDIR/initramfs/arm-busybox 
     find . | cpio -o --format=newc > $WORKDIR/obj/rootfs.img  
     
 ## 9. Zip rootfs file  

@@ -1,3 +1,5 @@
+#!/bin/sh
+# script to build busybox
 WORKDIR=$HOME/bbl-3.2
 mkdir $WORKDIR
 cd $WORKDIR
